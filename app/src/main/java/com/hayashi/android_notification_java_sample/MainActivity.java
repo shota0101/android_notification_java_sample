@@ -15,6 +15,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import static android.support.v4.app.NotificationCompat.PRIORITY_MAX;
+
 // 参考
 // https://developer.android.com/guide/topics/ui/notifiers/notifications?hl=ja
 
@@ -66,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
                         .setSmallIcon(R.drawable.ic_launcher_background)
+                        .setPriority(PRIORITY_MAX) // 通知の優先度を最高に設定
                         .setContentTitle("My notification")
                         .setContentText("Hello World!");
         // Creates an explicit intent for an Activity in your app
