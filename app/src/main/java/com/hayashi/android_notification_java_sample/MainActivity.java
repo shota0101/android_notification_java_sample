@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     private void notification() {
         int notificationId = 1;
         NotificationCompat.Builder mBuilder =
-                new NotificationCompat.Builder(this)
+                new NotificationCompat.Builder(this, "channeld")
                         .setSmallIcon(R.drawable.ic_launcher_background)
                         .setPriority(PRIORITY_MAX) // 通知の優先度を最高に設定
                         .setContentTitle("My notification")
