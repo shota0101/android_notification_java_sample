@@ -33,6 +33,11 @@ public class MyNotification {
         this(context, context.getClass());
     }
 
+    /**
+     * MyNotificationクラスのコンストラクタ
+     * @param context 通知元
+     * @param resultActivity 通知をタップした際に開くアクティビティのクラス
+     */
     public MyNotification(Context context, Class resultActivity) {
         this.context = context;
         this.resultActivity = resultActivity;
